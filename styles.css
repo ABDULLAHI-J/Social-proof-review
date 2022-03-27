@@ -30,6 +30,7 @@ body {
 
 .header .container {
   min-height: 350px;
+  margin-top: 30px;
 }
 
 .text-content h1 {
@@ -90,6 +91,11 @@ body {
 .profile {
   display: flex;
   align-items: center;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .profile div {
