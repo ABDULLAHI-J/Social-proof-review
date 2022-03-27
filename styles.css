@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header .container {
+  min-height: 350px;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: hsl(300, 43%, 22%);
+  margin: 10px;
+}
+
+.text-content p {
+  margin-top: 1rem;
+  line-height: 1.6;
+  margin: 10px;
+  color: hsl(303, 10%, 53%);
+}
+
+.rating {
+  width: 100%;
+  padding: 0px 40px;
+}
+
+.rating-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px;
+  margin: 20px;
+  background-color: hsl(300, 24%, 96%);
+}
+
+.rating-star {
+  margin-right: 20px;
+  letter-spacing: 10px;
+}
+
+.rating .rating-card:nth-child(1) {
+  max-width: 400px;
+}
+
+.rating .rating-card:nth-child(2) {
+  max-width: 440px;
+  margin-left: 40px;
+}
+.rating .rating-card:nth-child(3) {
+  max-width: 480px;
+  margin-left: 80px;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile div {
+  margin-left: 20px;
+  line-height: 1.4;
+}
+
+small {
+  color: hsl(333, 80%, 67%);
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.review-text {
+  margin-top: 25px;
+  line-height: 1.6;
+}
+.container .card:nth-child(2) {
+  margin-top: 40px;
+}
+.container .card:nth-child(3) {
+  margin-top: 80px;
+}
+
+/* media query */
+@media (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header .container .text-content {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rating-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rating .rating-card:nth-child(1) {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .rating .rating-card:nth-child(2) {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 20px;
+  }
+  .rating .rating-card:nth-child(3) {
+    max-width: 400px;
+    margin-left: 20px;
+  }
+
+  .rating-star {
+    display: flex;
+    padding: 10px;
+  }
+}
